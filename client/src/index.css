@@ -1,0 +1,44 @@
+:root { font-family: Georgia, "Times New Roman", serif; color: #24312d; background: #f3f0e9; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at 15% 10%, #fffdf8 0, transparent 32%), #f3f0e9; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.app-shell { min-height: 100vh; }
+.topbar { align-items: center; display: flex; justify-content: space-between; margin: 0 auto; max-width: 1240px; padding: 28px 5vw; }
+.brand { align-items: center; color: #24312d; display: flex; font-size: 20px; font-weight: 700; gap: 10px; text-decoration: none; }
+.brand-mark { align-items: center; background: #d65b3f; border-radius: 50%; color: #fffdf8; display: flex; font-family: Arial, sans-serif; font-size: 13px; height: 30px; justify-content: center; width: 30px; }
+.account-actions { align-items: center; display: flex; gap: 18px; }
+.welcome, .form-help, .secure-note { color: #718079; font-family: Arial, sans-serif; font-size: 13px; }
+.button { border: 0; border-radius: 3px; font-family: Arial, sans-serif; font-size: 13px; font-weight: 700; padding: 14px 20px; transition: transform .2s, opacity .2s; }
+.button:hover:not(:disabled) { transform: translateY(-2px); }
+.button:disabled { cursor: wait; opacity: .65; }
+.button-primary { background: #24312d; color: #fffdf8; }
+.button-quiet { background: transparent; color: #24312d; padding: 8px 0; }
+.button-full { width: 100%; }
+.auth-layout, .payment-page { align-items: center; display: grid; gap: 9vw; grid-template-columns: 1fr 410px; margin: 4vh auto 0; max-width: 1040px; padding: 5vw; }
+.auth-intro h1, .payment-copy h1 { font-size: clamp(48px, 6vw, 82px); font-weight: 400; letter-spacing: -3px; line-height: .94; margin: 16px 0 24px; }
+em { color: #d65b3f; font-style: italic; }
+.eyebrow { color: #d65b3f; font-family: Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.6px; margin: 0; text-transform: uppercase; }
+.intro-copy, .payment-copy > p:last-child { color: #718079; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.6; max-width: 320px; }
+.form-panel, .product-panel { background: #fffdf8; border: 1px solid #e1ddd3; border-radius: 4px; box-shadow: 0 18px 50px rgba(36,49,45,.07); padding: 34px; }
+.form-panel h2, .product-panel h2 { font-size: 30px; font-weight: 400; margin: 10px 0 8px; }
+.form-help { margin: 0 0 28px; }
+form { display: grid; gap: 17px; }
+label { color: #24312d; display: grid; font-family: Arial, sans-serif; font-size: 12px; font-weight: 700; gap: 7px; }
+input { background: transparent; border: 0; border-bottom: 1px solid #c8c9c0; color: #24312d; outline: 0; padding: 10px 0; }
+input:focus { border-color: #d65b3f; }
+.error-message { color: #b43e2b; font-family: Arial, sans-serif; font-size: 12px; margin: 0; }
+.switch-prompt { color: #718079; font-family: Arial, sans-serif; font-size: 12px; margin: 25px 0 0; text-align: center; }
+.switch-prompt a { color: #d65b3f; font-weight: 700; }
+.payment-page { grid-template-columns: 1fr 440px; }
+.product-panel { padding: 18px; }
+.product-image { align-items: center; background: linear-gradient(135deg, #d65b3f, #e2a05c); color: #fffdf8; display: flex; font-family: Arial, sans-serif; font-size: 80px; font-weight: 700; height: 260px; justify-content: center; }
+.product-image span { opacity: .82; }
+.product-details { align-items: end; display: flex; justify-content: space-between; padding: 25px 8px; }
+.product-details h2 { margin: 8px 0; }
+.product-details p:not(.eyebrow) { color: #718079; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; margin: 0; max-width: 230px; }
+.product-details strong { font-size: 20px; white-space: nowrap; }
+.status-message { color: #2d8066; font-family: Arial, sans-serif; font-size: 13px; margin: 17px 0 0; text-align: center; }
+.secure-note { margin: 18px 0 2px; text-align: center; }
+@media (max-width: 760px) { .topbar { padding: 22px 7vw; } .welcome { display: none; } .auth-layout, .payment-page { display: block; margin-top: 3vh; padding: 8vw; } .auth-intro, .payment-copy { margin-bottom: 45px; } .auth-intro h1, .payment-copy h1 { font-size: 58px; } .form-panel, .product-panel { padding: 24px; } }
+
